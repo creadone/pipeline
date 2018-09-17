@@ -1,5 +1,5 @@
 module Pipeline
-  abstract class Worker
-    abstract def execute
+  class Worker
+    def execute(data); end
   end
 end
