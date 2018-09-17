@@ -10,7 +10,7 @@ module Pipeline
     end
 
     def execute(data)
-      @workers.eacc do |worker|
+      @workers.each do |worker|
         worker.execute(data)
       end
     end
